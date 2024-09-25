@@ -1,0 +1,14 @@
+section {
+    background-color: #fff;
+    color: black;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark-mode section {
+    background-color: #000 !important;
+    color: white !important;
+}
+
+.dark-mode #mode-text{
+    color: #fff !important;
+}
