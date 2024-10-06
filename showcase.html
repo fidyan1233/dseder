@@ -43,6 +43,54 @@
     </script>
 
 </head>
+<style>
+          .hover-button {
+        /* width: 250px; */
+        /* height: 60px; */
+        padding: 10px 20px;
+        background: rgb(255, 185, 0);
+        border: 0.5mm solid black;
+        border-radius: 5mm;
+        box-shadow: 3px 3px 0 black;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s;
+        margin: 0px 10px;
+      }
+      .text {
+        /* font-size: 22px; */
+        font-weight: bold;
+        font-family: poppins;
+        z-index: 1;
+        position: relative;
+      }
+      .wave {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        background: url(assets/images/wave.png);
+        background-size: 200% 100%;
+        top: 100%;
+        left: 0;
+        animation: wave 2s linear infinite;
+        transition: 0.1s;
+      }
+      @keyframes wave {
+        from {
+          background-position-x: 0;
+        }
+        to {
+          background-position-x: 200%;
+        }
+      }
+      .hover-button:hover .wave {
+        top: 50%;
+      }
+      .hover-button:hover {
+        box-shadow: 6px 6px 0 #413e3e;
+      }
+</style>
 
 <body class="sk__homepage sk__theme-preview dark-shade-1-bg">
 
@@ -97,7 +145,7 @@
                 </li>
 
                 <li class="nav-item">
-					<a class="nav-link hvr-underline-from-center" href="video-editing.html">Show Case</a>
+					<a class="nav-link hvr-underline-from-center" href="showcase.html">Showcase</a>
 				</li>
 
                 <li class="nav-item">
@@ -120,7 +168,7 @@
                     <div class="container sk__supercontainer">
                         <div class="row text-center">
                             <div class="col-12">
-                                <h1>Video Editing</h1>
+                                <h1>Our Showcase</h1>
                             </div>
                         </div>
                     </div>
@@ -133,44 +181,89 @@
                             <div class="col-lg-12">
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="all-tab" data-bs-toggle="tab"
+                                        <!-- <button class="nav-link active" id="all-tab" data-bs-toggle="tab"
                                             data-bs-target="#all" type="button" role="tab" aria-controls="all"
-                                            aria-selected="true">All Videos</button>
+                                            aria-selected="true">All Videos</button> -->
+                                            <button class="hover-button" id="all-tab" data-bs-toggle="tab"
+                                            data-bs-target="#all" type="button" role="tab" aria-controls="all"
+                                            aria-selected="true">
+                                                <div class="text">All Videos</div>
+                                                <div class="wave"></div>
+                                              </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="talking-tab" data-bs-toggle="tab"
+                                        <!-- <button class="nav-link" id="talking-tab" data-bs-toggle="tab"
                                             data-bs-target="#talking" type="button" role="tab" aria-controls="talking"
-                                            aria-selected="true">Talking Head Videos</button>
+                                            aria-selected="true">Talking Head Videos</button> -->
+
+
+
+                                            <button class="hover-button" id="talking-tab" data-bs-toggle="tab"
+                                            data-bs-target="#talking" type="button" role="tab" aria-controls="talking"
+                                            aria-selected="true">
+                                                <div class="text">Talking Head Videos</div>
+                                                <div class="wave"></div>
+                                              </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="shorts-tab" data-bs-toggle="tab"
+                                        <!-- <button class="hover-button" id="shorts-tab" data-bs-toggle="tab"
                                             data-bs-target="#shorts" type="button" role="tab" aria-controls="shorts"
                                             aria-selected="false">
-                                            Shorts</button>
+                                            Shorts</button> -->
+                                            <button class="hover-button" id="shorts-tab" data-bs-toggle="tab"
+                                            data-bs-target="#shorts" type="button" role="tab" aria-controls="shorts"
+                                            aria-selected="false">
+                                                <div class="text">Shorts</div>
+                                                <div class="wave"></div>
+                                              </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="gaming-tab" data-bs-toggle="tab"
+                                        <!-- <button class="nav-link" id="gaming-tab" data-bs-toggle="tab"
                                             data-bs-target="#gaming" type="button" role="tab" aria-controls="gaming"
                                             aria-selected="false">
-                                            Gaming Videos</button>
+                                            Gaming Videos</button> -->
+                                            <button class="hover-button" id="gaming-tab" data-bs-toggle="tab"
+                                            data-bs-target="#gaming" type="button" role="tab" aria-controls="gaming"
+                                            aria-selected="false">
+                                                <div class="text">Gaming Videos</div>
+                                                <div class="wave"></div>
+                                              </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="marketing-tab" data-bs-toggle="tab"
+                                        <!-- <button class="nav-link" id="marketing-tab" data-bs-toggle="tab"
                                             data-bs-target="#marketing" type="button" role="tab"
                                             aria-controls="marketing" aria-selected="false">
-                                            Marketing Videos</button>
+                                            Marketing Videos</button> -->
+                                            <button class="hover-button" id="marketing-tab" data-bs-toggle="tab"
+                                            data-bs-target="#marketing" type="button" role="tab"
+                                            aria-controls="marketing" aria-selected="false">
+                                                <div class="text">Marketing Videos</div>
+                                                <div class="wave"></div>
+                                              </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="documentary-tab" data-bs-toggle="tab"
+                                        <!-- <button class="nav-link" id="documentary-tab" data-bs-toggle="tab"
                                             data-bs-target="#documentary" type="button" role="tab"
                                             aria-controls="documentary" aria-selected="false">
-                                            Documentary Videos</button>
+                                            Documentary Videos</button> -->
+                                            <button class="hover-button" id="documentary-tab" data-bs-toggle="tab"
+                                            data-bs-target="#documentary" type="button" role="tab"
+                                            aria-controls="documentary" aria-selected="false">
+                                                <div class="text">Documentary Videos</div>
+                                                <div class="wave"></div>
+                                              </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="thumbnails-tab" data-bs-toggle="tab"
+                                        <!-- <button class="nav-link" id="thumbnails-tab" data-bs-toggle="tab"
                                             data-bs-target="#thumbnails" type="button" role="tab"
                                             aria-controls="thumbnails" aria-selected="false">
-                                            Thumbnails</button>
+                                            Thumbnails</button> -->
+                                            <button class="hover-button" id="thumbnails-tab" data-bs-toggle="tab"
+                                            data-bs-target="#thumbnails" type="button" role="tab"
+                                            aria-controls="thumbnails" aria-selected="false">
+                                                <div class="text">Thumbnails</div>
+                                                <div class="wave"></div>
+                                              </button>
                                     </li>
                                 </ul>
 
