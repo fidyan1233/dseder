@@ -4468,6 +4468,7 @@ section.sk__skip-parallax-background-section.sk__parallax-fixer-section {
 	border-radius: 5px;
 	background-color: #0C0C0C;
 	margin-bottom: 24px;
+	min-height: 370px;
 }
 
 .sk__imagebox:hover {

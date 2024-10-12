@@ -44,7 +44,7 @@
 
 </head>
 <style>
-          .hover-button {
+    .hover-button {
         /* width: 250px; */
         /* height: 60px; */
         padding: 10px 20px;
@@ -57,15 +57,18 @@
         overflow: hidden;
         transition: 0.3s;
         margin: 0px 10px;
-      }
-      .text {
+        margin-bottom: 20px;
+    }
+
+    .text {
         /* font-size: 22px; */
         font-weight: bold;
         font-family: poppins;
         z-index: 1;
         position: relative;
-      }
-      .wave {
+    }
+
+    .wave {
         position: absolute;
         width: 100%;
         height: 50%;
@@ -75,21 +78,25 @@
         left: 0;
         animation: wave 2s linear infinite;
         transition: 0.1s;
-      }
-      @keyframes wave {
+    }
+
+    @keyframes wave {
         from {
-          background-position-x: 0;
+            background-position-x: 0;
         }
+
         to {
-          background-position-x: 200%;
+            background-position-x: 200%;
         }
-      }
-      .hover-button:hover .wave {
+    }
+
+    .hover-button:hover .wave {
         top: 50%;
-      }
-      .hover-button:hover {
+    }
+
+    .hover-button:hover {
         box-shadow: 6px 6px 0 #413e3e;
-      }
+    }
 </style>
 
 <body class="sk__homepage sk__theme-preview dark-shade-1-bg">
@@ -145,8 +152,8 @@
                 </li>
 
                 <li class="nav-item">
-					<a class="nav-link hvr-underline-from-center" href="showcase.html">Showcase</a>
-				</li>
+                    <a class="nav-link hvr-underline-from-center" href="showcase.html">Showcase</a>
+                </li>
 
                 <li class="nav-item">
                     <a class="nav-link hvr-underline-from-center" href="contact.html">Contact Us</a>
@@ -181,96 +188,96 @@
                             <div class="col-lg-12">
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <!-- <button class="nav-link active" id="all-tab" data-bs-toggle="tab"
-                                            data-bs-target="#all" type="button" role="tab" aria-controls="all"
-                                            aria-selected="true">All Videos</button> -->
-                                            <button class="hover-button" id="all-tab" data-bs-toggle="tab"
+
+                                        <button class="hover-button" id="all-tab" data-bs-toggle="tab"
                                             data-bs-target="#all" type="button" role="tab" aria-controls="all"
                                             aria-selected="true">
-                                                <div class="text">All Videos</div>
-                                                <div class="wave"></div>
-                                              </button>
+                                            <div class="text">All Videos</div>
+                                            <div class="wave"></div>
+                                        </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <!-- <button class="nav-link" id="talking-tab" data-bs-toggle="tab"
-                                            data-bs-target="#talking" type="button" role="tab" aria-controls="talking"
-                                            aria-selected="true">Talking Head Videos</button> -->
+
+                                        <button class="hover-button" id="ai-voice-commentary-tab" data-bs-toggle="tab"
+                                            data-bs-target="#ai-voice-commentary" type="button" role="tab"
+                                            aria-controls="ai-voice-commentary" aria-selected="false">
+                                            <div class="text">Ai Voice Commentary</div>
+                                            <div class="wave"></div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
 
 
 
-                                            <button class="hover-button" id="talking-tab" data-bs-toggle="tab"
+
+                                        <button class="hover-button" id="talking-tab" data-bs-toggle="tab"
                                             data-bs-target="#talking" type="button" role="tab" aria-controls="talking"
                                             aria-selected="true">
-                                                <div class="text">Talking Head Videos</div>
-                                                <div class="wave"></div>
-                                              </button>
+                                            <div class="text">Talking Head Videos</div>
+                                            <div class="wave"></div>
+                                        </button>
+                                    </li>
+
+                                    <li class="nav-item" role="presentation"></li>
+
+                                    <button class="hover-button" id="challenges-videos-tab" data-bs-toggle="tab"
+                                        data-bs-target="#challenges-videos" type="button" role="tab"
+                                        aria-controls="challenges-videos" aria-selected="false">
+                                        <div class="text">Challenges Videos</div>
+                                        <div class="wave"></div>
+                                    </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <!-- <button class="hover-button" id="shorts-tab" data-bs-toggle="tab"
-                                            data-bs-target="#shorts" type="button" role="tab" aria-controls="shorts"
-                                            aria-selected="false">
-                                            Shorts</button> -->
-                                            <button class="hover-button" id="shorts-tab" data-bs-toggle="tab"
-                                            data-bs-target="#shorts" type="button" role="tab" aria-controls="shorts"
-                                            aria-selected="false">
-                                                <div class="text">Shorts</div>
-                                                <div class="wave"></div>
-                                              </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <!-- <button class="nav-link" id="gaming-tab" data-bs-toggle="tab"
+
+                                        <button class="hover-button" id="gaming-tab" data-bs-toggle="tab"
                                             data-bs-target="#gaming" type="button" role="tab" aria-controls="gaming"
                                             aria-selected="false">
-                                            Gaming Videos</button> -->
-                                            <button class="hover-button" id="gaming-tab" data-bs-toggle="tab"
-                                            data-bs-target="#gaming" type="button" role="tab" aria-controls="gaming"
+                                            <div class="text">Gaming Videos</div>
+                                            <div class="wave"></div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+
+                                        <button class="hover-button" id="explainer-tab" data-bs-toggle="tab"
+                                            data-bs-target="#explainer" type="button" role="tab"
+                                            aria-controls="explainer" aria-selected="false">
+                                            <div class="text">Explainer Videos</div>
+                                            <div class="wave"></div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+
+                                        <button class="hover-button" id="podcast-tab" data-bs-toggle="tab"
+                                            data-bs-target="#podcast" type="button" role="tab" aria-controls="podcast"
                                             aria-selected="false">
-                                                <div class="text">Gaming Videos</div>
-                                                <div class="wave"></div>
-                                              </button>
+                                            <div class="text">Podcast</div>
+                                            <div class="wave"></div>
+                                        </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <!-- <button class="nav-link" id="marketing-tab" data-bs-toggle="tab"
-                                            data-bs-target="#marketing" type="button" role="tab"
-                                            aria-controls="marketing" aria-selected="false">
-                                            Marketing Videos</button> -->
-                                            <button class="hover-button" id="marketing-tab" data-bs-toggle="tab"
-                                            data-bs-target="#marketing" type="button" role="tab"
-                                            aria-controls="marketing" aria-selected="false">
-                                                <div class="text">Marketing Videos</div>
-                                                <div class="wave"></div>
-                                              </button>
+
+                                        <button class="hover-button" id="vlogs-tab" data-bs-toggle="tab"
+                                            data-bs-target="#vlogs" type="button" role="tab" aria-controls="vlogs"
+                                            aria-selected="false">
+                                            <div class="text">Vlogs</div>
+                                            <div class="wave"></div>
+                                        </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <!-- <button class="nav-link" id="documentary-tab" data-bs-toggle="tab"
-                                            data-bs-target="#documentary" type="button" role="tab"
-                                            aria-controls="documentary" aria-selected="false">
-                                            Documentary Videos</button> -->
-                                            <button class="hover-button" id="documentary-tab" data-bs-toggle="tab"
-                                            data-bs-target="#documentary" type="button" role="tab"
-                                            aria-controls="documentary" aria-selected="false">
-                                                <div class="text">Documentary Videos</div>
-                                                <div class="wave"></div>
-                                              </button>
+
+                                        <button class="hover-button" id="ads-tab" data-bs-toggle="tab"
+                                            data-bs-target="#ads" type="button" role="tab" aria-controls="ads"
+                                            aria-selected="false">
+                                            <div class="text">Ads</div>
+                                            <div class="wave"></div>
+                                        </button>
                                     </li>
-                                    <li class="nav-item" role="presentation">
-                                        <!-- <button class="nav-link" id="thumbnails-tab" data-bs-toggle="tab"
-                                            data-bs-target="#thumbnails" type="button" role="tab"
-                                            aria-controls="thumbnails" aria-selected="false">
-                                            Thumbnails</button> -->
-                                            <button class="hover-button" id="thumbnails-tab" data-bs-toggle="tab"
-                                            data-bs-target="#thumbnails" type="button" role="tab"
-                                            aria-controls="thumbnails" aria-selected="false">
-                                                <div class="text">Thumbnails</div>
-                                                <div class="wave"></div>
-                                              </button>
-                                    </li>
+
+
                                 </ul>
-
                                 <!-- Tab panes -->
                                 <div class="tab-content">
-                                    <div class="tab-pane active" id="all" role="tabpanel"
-                                        aria-labelledby="all-tab">
+                                    <div class="tab-pane active" id="all" role="tabpanel" aria-labelledby="all-tab">
 
                                         <div class="row sk__imageboxes">
                                             <div class="col-12 col-sm-6 col-lg-4">
@@ -278,13 +285,14 @@
                                                     <img class="sk__imagebox-top-bar"
                                                         src="assets/images/demos-thumbs-browser-bar-mockup.svg">
                                                     <div class="sk__imagebox-img-wrap">
-                                                        <img class="sk__imagebox-img" src="assets/images/thumbnails/1.jpg"
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/peter-podcast.webp"
                                                             alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/im1Ooo5qWOw?si=13w4yr0NKhgtjkUEC"
+                                                            data-video="https://www.youtube.com/embed/NbyJhBkEiaE?si=kcJcNqcMypeBBpKo"
                                                             onclick="showPopup(this)">
                                                     </div>
                                                     <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
+                                                        <h5>Peter Dean Podcast Trailer Like DOAC</h5>
                                                     </div>
                                                 </a>
                                             </div>
@@ -293,12 +301,14 @@
                                                     <img class="sk__imagebox-top-bar"
                                                         src="assets/images/demos-thumbs-browser-bar-mockup.svg">
                                                     <div class="sk__imagebox-img-wrap">
-                                                        <img class="sk__imagebox-img" src="assets/images/thumbnails/2.jpg" alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/ZgpCzcJ2x9U?si=F9ohBF9cpttX_fC_"
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/zaggs-gaming.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/UY4sY6QfKgg?si=Jcz8yxDb1U2nWlG6"
                                                             onclick="showPopup(this)">
                                                     </div>
                                                     <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
+                                                        <h5>Zaggs Gaming</h5>
                                                     </div>
                                                 </a>
                                             </div>
@@ -307,12 +317,14 @@
                                                     <img class="sk__imagebox-top-bar"
                                                         src="assets/images/demos-thumbs-browser-bar-mockup.svg">
                                                     <div class="sk__imagebox-img-wrap">
-                                                        <img class="sk__imagebox-img" src="assets/images/thumbnails/3.jpg" alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/3Oy4kbpDv90?si=hyEFyEqbr71ZEl2U"
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/ues-canadian-prime-minister-justin-trudeau.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/PuByopWWNEA?si=khrwVIHmGjEcKmQO"
                                                             onclick="showPopup(this)">
                                                     </div>
                                                     <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
+                                                        <h5>UES Canadian Prime Minister Justin Trudeau</h5>
                                                     </div>
                                                 </a>
                                             </div>
@@ -321,12 +333,14 @@
                                                     <img class="sk__imagebox-top-bar"
                                                         src="assets/images/demos-thumbs-browser-bar-mockup.svg">
                                                     <div class="sk__imagebox-img-wrap">
-                                                        <img class="sk__imagebox-img" src="assets/images/thumbnails/5.jpg" alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/NbyJhBkEiaE?si=oRVMUzk2Q_mIYBnY"
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/divot-dudes-joey.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/FrjnXs0pso4?si=exnae8_l7S3WmQa2"
                                                             onclick="showPopup(this)">
                                                     </div>
                                                     <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
+                                                        <h5>Divot Dudes Joey</h5>
                                                     </div>
                                                 </a>
                                             </div>
@@ -335,12 +349,14 @@
                                                     <img class="sk__imagebox-top-bar"
                                                         src="assets/images/demos-thumbs-browser-bar-mockup.svg">
                                                     <div class="sk__imagebox-img-wrap">
-                                                        <img class="sk__imagebox-img" src="assets/images/thumbnails/6.jpg" alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/APrtE3Yzplo?si=b4fG5hXxIW-zotu8"
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/podcast-like-doac.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/3fFFGWQHD28?si=5TeUhdU-kF-ZBHTO"
                                                             onclick="showPopup(this)">
                                                     </div>
                                                     <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
+                                                        <h5>Podcast Like DOAC</h5>
                                                     </div>
                                                 </a>
                                             </div>
@@ -349,12 +365,14 @@
                                                     <img class="sk__imagebox-top-bar"
                                                         src="assets/images/demos-thumbs-browser-bar-mockup.svg">
                                                     <div class="sk__imagebox-img-wrap">
-                                                        <img class="sk__imagebox-img" src="assets/images/thumbnails/4.jpg" alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/9pUCT9m8iVk?si=oadh3a-MXZE_sgIF"
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/cannablendz-ad.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/j9dtuX0n3Tw?si=UuIMglOirfOqhaQn"
                                                             onclick="showPopup(this)">
                                                     </div>
                                                     <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
+                                                        <h5>CannaBlendz Ad</h5>
                                                     </div>
                                                 </a>
                                             </div>
@@ -363,12 +381,14 @@
                                                     <img class="sk__imagebox-top-bar"
                                                         src="assets/images/demos-thumbs-browser-bar-mockup.svg">
                                                     <div class="sk__imagebox-img-wrap">
-                                                        <img class="sk__imagebox-img" src="assets/images/thumbnails/7.jpg" alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/j1hKG96NdSA?si=TGPhQ-QqXFv_t4VW"
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/football-manchester-united.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/LnPrTJ8brxg?si=t2demK3PzSDAKikt"
                                                             onclick="showPopup(this)">
                                                     </div>
                                                     <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
+                                                        <h5>Football Manchester United</h5>
                                                     </div>
                                                 </a>
                                             </div>
@@ -377,12 +397,14 @@
                                                     <img class="sk__imagebox-top-bar"
                                                         src="assets/images/demos-thumbs-browser-bar-mockup.svg">
                                                     <div class="sk__imagebox-img-wrap">
-                                                        <img class="sk__imagebox-img" src="assets/images/thumbnails/8.jpg" alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/1tdoynZkh9U?si=nA--rprhUxon6TEo"
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/how-does-anime-make-anime.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/a0aPmdcx_u4?si=Aj0GJC0CPKE_dznS"
                                                             onclick="showPopup(this)">
                                                     </div>
                                                     <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
+                                                        <h5>How Does Anime Make Anime</h5>
                                                     </div>
                                                 </a>
                                             </div>
@@ -391,20 +413,240 @@
                                                     <img class="sk__imagebox-top-bar"
                                                         src="assets/images/demos-thumbs-browser-bar-mockup.svg">
                                                     <div class="sk__imagebox-img-wrap">
-                                                        <img class="sk__imagebox-img" src="assets/images/thumbnails/9.jpg" alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/oeTJe331YSE?si=DxVMbDAAXUqtFrF1"
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/ink-pay-instructional.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/9pUCT9m8iVk?si=AiwSTKGimDnsV1GE"
                                                             onclick="showPopup(this)">
                                                     </div>
                                                     <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
+                                                        <h5>INK PAY Instructional</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/ink-pay-ad-wo-vo-16-9.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/TprzOFwFmj0?si=bzXUblRncIoLCTGI"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Ink Pay Ad WO VO 16 9</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/ink-pay-ad.webp" alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/fsy75qHcm7M?si=v2pGTLRabf8nEr0Y"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Ink Pay Ad</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/best-countries-for-crypto-millionaires.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/raL_EDs9cw0?si=DaFxtn0-glpZCofN"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Best Countries For Crypto Millionaires</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/serbia-vlog.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/5RW5vumGWiQ?si=qwPhJPD5SalVQOBv"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Serbia Vlog</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/the-us-card.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/v-GbvabnDoI?si=1g2NESuOMP_8HXmf"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>The US Card</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/the-all-three.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/oeTJe331YSE?si=GrCXVr_aHZELBM7U"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>The All Three</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/muslim-vs-jew.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/1tdoynZkh9U?si=rPYxBbX0AJvC1NNE"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Muslim VS Jew</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/mosely-vs-margerito.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/j1hKG96NdSA?si=PZ1qwFenUlEjM6KN"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Mosely VS Margerito</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/davis-vs-santa-cruz-nb2.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/3Oy4kbpDv90?si=w09hCqpg6cvylu3j"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Davis VS Santa Cruz NB2</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/floyd-vs-victor.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/APrtE3Yzplo?si=u4RlKc15n4HxjLqu"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Floyd VS Victor</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/derek-chisora-vs-vitali-klitschko.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/Z9Oeu7Syro8?si=CB1gPI2duTJZnE-d"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Derek Chisora VS Vitali Klitschko</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/13.webp" alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/ZgpCzcJ2x9U?si=i0WPvUlWyq1Z_6Vd"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>6 Things About Tyson</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/14.webp" alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/FnfALibbTmA?si=A7rG86miSJWaEhOk"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Tyson vs Holyfield</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/15.webp" alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/im1Ooo5qWOw?si=8qIe0Uy3BUa1RmzN"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Devin H vs Ryan G</h5>
                                                     </div>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane" id="talking" role="tabpanel"
-                                        aria-labelledby="talking-tab">
-
+                                    <div class="tab-pane" id="talking" role="tabpanel" aria-labelledby="talking-tab">
                                         <div class="row sk__imageboxes">
                                             <div class="col-12 col-sm-6 col-lg-4">
                                                 <a class="sk__imagebox">
@@ -412,12 +654,13 @@
                                                         src="assets/images/demos-thumbs-browser-bar-mockup.svg">
                                                     <div class="sk__imagebox-img-wrap">
                                                         <img class="sk__imagebox-img"
-                                                            src="assets/images/thumbnails/1.jpg" alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/im1Ooo5qWOw?si=13w4yr0NKhgtjkUEC"
+                                                            src="assets/images/thumbnails/best-countries-for-crypto-millionaires.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/raL_EDs9cw0?si=DaFxtn0-glpZCofN"
                                                             onclick="showPopup(this)">
                                                     </div>
                                                     <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
+                                                        <h5>Best Countries For Crypto Millionaires</h5>
                                                     </div>
                                                 </a>
                                             </div>
@@ -427,12 +670,13 @@
                                                         src="assets/images/demos-thumbs-browser-bar-mockup.svg">
                                                     <div class="sk__imagebox-img-wrap">
                                                         <img class="sk__imagebox-img"
-                                                            src="assets/images/thumbnails/2.jpg" alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/ZgpCzcJ2x9U?si=F9ohBF9cpttX_fC_"
+                                                            src="assets/images/thumbnails/the-us-card.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/v-GbvabnDoI?si=1g2NESuOMP_8HXmf"
                                                             onclick="showPopup(this)">
                                                     </div>
                                                     <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
+                                                        <h5>The US Card</h5>
                                                     </div>
                                                 </a>
                                             </div>
@@ -442,32 +686,34 @@
                                                         src="assets/images/demos-thumbs-browser-bar-mockup.svg">
                                                     <div class="sk__imagebox-img-wrap">
                                                         <img class="sk__imagebox-img"
-                                                            src="assets/images/thumbnails/3.jpg" alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/3Oy4kbpDv90?si=hyEFyEqbr71ZEl2U"
+                                                            src="assets/images/thumbnails/the-all-three.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/oeTJe331YSE?si=GrCXVr_aHZELBM7U"
                                                             onclick="showPopup(this)">
                                                     </div>
                                                     <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
+                                                        <h5>The All Three</h5>
                                                     </div>
                                                 </a>
                                             </div>
-
                                         </div>
                                     </div>
-                                    <div class="tab-pane" id="shorts" role="tabpanel" aria-labelledby="shorts-tab">
-                                        <div class="row">
+                                    <div class="tab-pane" id="ai-voice-commentary" role="tabpanel"
+                                        aria-labelledby="ai-voice-commentary-tab">
+                                        <div class="row sk__imageboxes">
                                             <div class="col-12 col-sm-6 col-lg-4">
                                                 <a class="sk__imagebox">
                                                     <img class="sk__imagebox-top-bar"
                                                         src="assets/images/demos-thumbs-browser-bar-mockup.svg">
                                                     <div class="sk__imagebox-img-wrap">
                                                         <img class="sk__imagebox-img"
-                                                            src="assets/images/thumbnails/5.jpg" alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/NbyJhBkEiaE?si=oRVMUzk2Q_mIYBnY"
+                                                            src="assets/images/thumbnails/muslim-vs-jew.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/1tdoynZkh9U?si=rPYxBbX0AJvC1NNE"
                                                             onclick="showPopup(this)">
                                                     </div>
                                                     <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
+                                                        <h5>Muslim VS Jew</h5>
                                                     </div>
                                                 </a>
                                             </div>
@@ -477,12 +723,13 @@
                                                         src="assets/images/demos-thumbs-browser-bar-mockup.svg">
                                                     <div class="sk__imagebox-img-wrap">
                                                         <img class="sk__imagebox-img"
-                                                            src="assets/images/thumbnails/6.jpg" alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/APrtE3Yzplo?si=b4fG5hXxIW-zotu8"
+                                                            src="assets/images/thumbnails/mosely-vs-margerito.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/j1hKG96NdSA?si=PZ1qwFenUlEjM6KN"
                                                             onclick="showPopup(this)">
                                                     </div>
                                                     <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
+                                                        <h5>Mosely VS Margerito</h5>
                                                     </div>
                                                 </a>
                                             </div>
@@ -492,84 +739,297 @@
                                                         src="assets/images/demos-thumbs-browser-bar-mockup.svg">
                                                     <div class="sk__imagebox-img-wrap">
                                                         <img class="sk__imagebox-img"
-                                                            src="assets/images/thumbnails/4.jpg" alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/9pUCT9m8iVk?si=oadh3a-MXZE_sgIF"
+                                                            src="assets/images/thumbnails/davis-vs-santa-cruz-nb2.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/3Oy4kbpDv90?si=w09hCqpg6cvylu3j"
                                                             onclick="showPopup(this)">
                                                     </div>
                                                     <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
+                                                        <h5>Davis VS Santa Cruz NB2</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/floyd-vs-victor.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/APrtE3Yzplo?si=u4RlKc15n4HxjLqu"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Floyd VS Victor</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/derek-chisora-vs-vitali-klitschko.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/Z9Oeu7Syro8?si=CB1gPI2duTJZnE-d"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Derek Chisora VS Vitali Klitschko</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/13.webp" alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/ZgpCzcJ2x9U?si=i0WPvUlWyq1Z_6Vd"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>6 Things About Tyson</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/14.webp" alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/FnfALibbTmA?si=A7rG86miSJWaEhOk"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Tyson vs Holyfield</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/15.webp" alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/im1Ooo5qWOw?si=8qIe0Uy3BUa1RmzN"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Devin H vs Ryan G</h5>
                                                     </div>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="tab-pane" id="gaming" role="tabpanel" aria-labelledby="gaming-tab">
-                                        <div class="row">
+                                        <div class="row sk__imageboxes">
+
                                             <div class="col-12 col-sm-6 col-lg-4">
                                                 <a class="sk__imagebox">
                                                     <img class="sk__imagebox-top-bar"
                                                         src="assets/images/demos-thumbs-browser-bar-mockup.svg">
                                                     <div class="sk__imagebox-img-wrap">
                                                         <img class="sk__imagebox-img"
-                                                            src="assets/images/thumbnails/7.jpg" alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/j1hKG96NdSA?si=TGPhQ-QqXFv_t4VW"
+                                                            src="assets/images/thumbnails/zaggs-gaming.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/UY4sY6QfKgg?si=Jcz8yxDb1U2nWlG6"
                                                             onclick="showPopup(this)">
                                                     </div>
                                                     <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
+                                                        <h5>Zaggs Gaming</h5>
                                                     </div>
                                                 </a>
                                             </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="challenges-videos" role="tabpanel"
+                                        aria-labelledby="challenges-videos-tab">
+                                        <div class="row sk__imageboxes">
                                             <div class="col-12 col-sm-6 col-lg-4">
                                                 <a class="sk__imagebox">
                                                     <img class="sk__imagebox-top-bar"
                                                         src="assets/images/demos-thumbs-browser-bar-mockup.svg">
                                                     <div class="sk__imagebox-img-wrap">
                                                         <img class="sk__imagebox-img"
-                                                            src="assets/images/thumbnails/8.jpg" alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/1tdoynZkh9U?si=nA--rprhUxon6TEo"
+                                                            src="assets/images/thumbnails/divot-dudes-joey.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/FrjnXs0pso4?si=exnae8_l7S3WmQa2"
                                                             onclick="showPopup(this)">
                                                     </div>
                                                     <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-12 col-sm-6 col-lg-4">
-                                                <a class="sk__imagebox">
-                                                    <img class="sk__imagebox-top-bar"
-                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
-                                                    <div class="sk__imagebox-img-wrap">
-                                                        <img class="sk__imagebox-img"
-                                                            src="assets/images/thumbnails/9.jpg" alt="Video 1"
-                                                            data-video="https://www.youtube.com/embed/oeTJe331YSE?si=DxVMbDAAXUqtFrF1"
-                                                            onclick="showPopup(this)">
-                                                    </div>
-                                                    <div class="sk__imagebox-text-wrap">
-                                                        <h5>Original - youtube Videos</h5>
+                                                        <h5>Divot Dudes Joey</h5>
                                                     </div>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane" id="marketing" role="tabpanel"
-                                        aria-labelledby="marketing-tab">
-                                        ...</div>
-                                    <div class="tab-pane" id="documentary" role="tabpanel"
-                                        aria-labelledby="documentary-tab">
-                                        ...</div>
-                                    <div class="tab-pane" id="thumbnails" role="tabpanel"
-                                        aria-labelledby="thumbnails-tab">
-                                        ...</div>
+
+                                    <div class="tab-pane" id="explainer" role="tabpanel"
+                                        aria-labelledby="explainer-tab">
+                                        <div class="row sk__imageboxes">
+
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/ues-canadian-prime-minister-justin-trudeau.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/PuByopWWNEA?si=khrwVIHmGjEcKmQO"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>UES Canadian Prime Minister Justin Trudeau</h5>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/football-manchester-united.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/LnPrTJ8brxg?si=t2demK3PzSDAKikt"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Football Manchester United</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/how-does-anime-make-anime.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/a0aPmdcx_u4?si=Aj0GJC0CPKE_dznS"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>How Does Anime Make Anime</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="podcast" role="tabpanel" aria-labelledby="podcast-tab">
+                                        <div class="row sk__imageboxes">
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/peter-podcast.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/NbyJhBkEiaE?si=kcJcNqcMypeBBpKo"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Peter Dean Podcast Trailer Like DOAC</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/podcast-like-doac.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/3fFFGWQHD28?si=5TeUhdU-kF-ZBHTO"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Podcast Like DOAC</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="vlogs" role="tabpanel" aria-labelledby="vlogs-tab">
+                                        <div class="row sk__imageboxes">
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/serbia-vlog.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/5RW5vumGWiQ?si=qwPhJPD5SalVQOBv"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>Serbia Vlog</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="ads" role="tabpanel" aria-labelledby="ads-tab">
+                                        <div class="row sk__imageboxes">
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/cannablendz-ad.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/j9dtuX0n3Tw?si=UuIMglOirfOqhaQn"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>CannaBlendz Ad</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-4">
+                                                <a class="sk__imagebox">
+                                                    <img class="sk__imagebox-top-bar"
+                                                        src="assets/images/demos-thumbs-browser-bar-mockup.svg">
+                                                    <div class="sk__imagebox-img-wrap">
+                                                        <img class="sk__imagebox-img"
+                                                            src="assets/images/thumbnails/ink-pay-instructional.webp"
+                                                            alt="Video 1"
+                                                            data-video="https://www.youtube.com/embed/9pUCT9m8iVk?si=AiwSTKGimDnsV1GE"
+                                                            onclick="showPopup(this)">
+                                                    </div>
+                                                    <div class="sk__imagebox-text-wrap">
+                                                        <h5>INK PAY Instructional</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <!-- Tabs content -->
+
                             </div>
+                            <!-- Tabs content -->
                         </div>
                     </div>
                 </section>
                 <!-- CTA Section (Warp CTA)
 				================================================== -->
-                <section class="sk__cta-warp position-relative sk__image-back-cover pt-0     not-animated">
+                <section class="sk__cta-warp position-relative sk__image-back-cover pt-0 not-animated">
                     <div class="container sk__powercontainer">
                         <div class="row">
                             <div class="col text-center">
@@ -665,7 +1125,8 @@
                                 <ul>
                                     <li>
                                         <a href="" class="footer-main-links gradient-links"><span
-                                                class="icon-phone"></span> +91
+                                                class="icon-phone"></span>
+                                            +91
                                             9999 999 999</a>
                                     </li>
                                     <li>
@@ -675,7 +1136,8 @@
                                     </li>
                                     <li class="address-link mt-2">
                                         <a href="" class="footer-main-links gradient-links"><span
-                                                class="icon-map"></span> Lorem
+                                                class="icon-map"></span>
+                                            Lorem
                                             ipsum dolor sit amet, consectetur
                                             adipisicing elit. Voluptates ducimus</a>
                                     </li>
